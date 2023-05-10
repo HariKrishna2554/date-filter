@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+// import FilterWithSearch from "./Components/FilterDate";
+// import CreateTable from "./Components/CreateTable";
+import Table from "./Components/new";
 
 function App() {
+  const expense = [
+    {title:'apple', price:64, date:new Date(2015, 5, 22)},
+    {title:'orange', price:52, date:new Date(2023, 4, 11)},
+    {title:'mango', price:40, date:new Date(2017, 5, 22)}
+  ];
+  console.log(expense)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <FilterWithSearch items={expense}/>
+      <CreateTable items={expense} /> */}
+      <Table />
     </div>
   );
 }
